@@ -78,10 +78,10 @@ namespace Asssgn
         {
             set
             {
-                if (value != "xyz")
-                    empName = value;
-                else
+                if (value == "")
                     Console.WriteLine("invalid name");
+                else
+                   empName = value; 
 
             }
             get
